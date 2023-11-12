@@ -1,0 +1,299 @@
+body {
+	background: #E7FEE2;
+	color: #000;
+}
+
+header {
+	/* background: #0B6; */
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+footer {
+	padding: 20px;
+	background: #000;
+	color:#fff;
+}
+
+/*-------NAVBARS Y BREADCRUMBS--------*/
+
+.breadcrumb_color{
+	background-color: #7BE16E;
+	font-weight: bold;
+}
+
+.op_navbar{
+	color: #fff; 
+	font-size: 25px; 
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+}
+.op_navbar:hover{
+	color: #fff; 
+	text-decoration: none;
+	font-size: 25px; 
+	text-align: left;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+}
+
+/*-------CONTENEDORES-------*/
+.container-minimo{
+	min-height: 660px;
+}
+.container-fluid {
+	max-width: 1700px;
+}
+.container-peque{
+	max-width: 800px;
+	max-height: 700px;
+	background-color: #21A90F;
+	border-radius: 25px
+}
+.container-agregar{
+	max-width: 850px;
+	max-height: 700px;
+	background-color: #21A90F;
+	border-radius: 25px
+}
+.container-sesion{
+	max-height: 700px;
+	background-color: #E7FEE2;
+	border-radius: 25px
+}
+.container-delgado{
+	max-width: 500px;
+	background-color: #E7FEE2;
+	border-radius: 25px
+}
+.container-med{
+	max-width: 1700px;
+	background-color: #21A90F;
+	border-radius: 25px;
+	padding: 5px;
+}
+.container-med-sf{
+	max-width: 1700px;
+	background-color: #E7FEE2;
+	border-radius: 25px;
+	padding: 5px;
+}
+.container-big{
+	max-width: 1000px;
+	height: 700px;
+	margin: 20px auto;
+	background-color: #21A90F;
+	border-radius: 25px
+}
+.espacio-texto{
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+/*-------BOTONES-------*/
+
+.btn-reserva {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 0 auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+}
+.btn-buscar {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 30px 30px ; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border-radius: 25px /*Borde del boton*/
+}
+.btn-confirmar {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #21A90F; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+.btn-confirmar:hover {
+	text-decoration: none;
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #21A90F; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+.btn-cancelar {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+.btn-cancelar:hover {
+	text-decoration: none;
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+.btn-eliminar {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 2px 2px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #21A90F; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 45px; /*altura*/
+	width: 45px ; /*ancho*/
+	padding: 5px;
+	border: 3px solid #000;
+	border-radius: 10px
+}
+.btn-eliminar:hover {
+	text-decoration: none;
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 2px 2px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #21A90F; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 45px; /*altura*/
+	width: 45px ; /*ancho*/
+	padding: 5px;
+	border: 3px solid #000;
+	border-radius: 10px
+}
+.btn-horario {
+	display: block; /* Convierte el botón en un elemento de bloque */
+	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #21A90F; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	min-height:50px ;
+	min-width: 30px;
+	padding: 5px;
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+/*-------CAMPOS PA RELLENAR-------*/
+
+.campo_borde{
+	border: 3px solid #000;
+	border-radius: 25px
+}
+/*-------TITULOS-------*/
+
+.titulo{
+	font-size: 50px; 
+	text-align: center; 
+	font-weight: bold;
+}
+
+.titulo_izq{
+	font-size: 50px; 
+	text-align: left; 
+	font-weight: bold;
+}
+
+.subtitulo{
+	font-size: 40px; 
+	text-align: center; 
+	font-weight: bold;
+}
+.subtitulo_izq{
+	font-size: 40px; 
+	text-align: left; 
+	font-weight: bold;
+}
+.sub_subtitulo_izq{
+	font-size: 25px; 
+	text-align: left; 
+	font-weight: bold;
+	padding-top: 5px;
+	
+}
+.nombre{
+	font-size: 30px; 
+	text-align: center; 
+	font-weight: bold;
+}
+
+.parrafo{
+	font-size: 30px; 
+	text-align: center;
+}
+.espacio_row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*-------TITULOS PARA MODAL-------*/
+.titulo_modal{
+	font-size: 25px;
+	font-weight: bold;
+}
+.subtitulo_modal{
+	font-size: 20px;
+	font-weight: bold;
+}
+.parrafo_modal{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*-------IMAGENES-------*/
+
+.img_centro{
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+}
+
+/*-------LINKS-------*/
+
+.link_gs{
+	color: #000;
+}
+.link_gs:hover{
+	color: #21A90F;
+	text-decoration: none;
+}
+.link_sg{
+	color: #000;
+}
+.link_sg:hover{
+	color: #000;
+	text-decoration: none;
+}
