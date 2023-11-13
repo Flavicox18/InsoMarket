@@ -75,7 +75,7 @@ footer {
 }
 .container-delgado{
 	max-width: 500px;
-	background-color: #E7FEE2;
+	background-color: #06327B;
 	border-radius: 25px
 }
 .container-med{
@@ -100,6 +100,18 @@ footer {
 .espacio-texto{
 	padding-top: 10px; 
 	padding-bottom: 10px;
+	color: #000000; /*color de letra*/
+}
+.espacio-olvidastecontra{
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	color: #ffffff; /*color de letra*/
+}
+
+.espacio-naranjaalternativo{
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	color: #F7A71E; /*color de letra*/
 }
 
 /*-------BOTONES-------*/
@@ -129,8 +141,8 @@ footer {
 	display: block; /* Convierte el botón en un elemento de bloque */
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #21A90F; /*color de fondo*/
-	color: #fff; /*color de letra*/
+	background-color: #F7A71E; /*color de fondo*/
+	color: #000000; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
@@ -142,8 +154,8 @@ footer {
 	display: block; /* Convierte el botón en un elemento de bloque */
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #21A90F; /*color de fondo*/
-	color: #fff; /*color de letra*/
+	background-color: rgb(122, 149, 239); /*color de fondo*/
+	color: #ffffff; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
@@ -154,8 +166,8 @@ footer {
 	display: block; /* Convierte el botón en un elemento de bloque */
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #000; /*color de fondo*/
-	color: #fff; /*color de letra*/
+	background-color: #ffffff; /*color de fondo*/
+	color: #000000; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
@@ -248,6 +260,7 @@ footer {
 	text-align: left; 
 	font-weight: bold;
 	padding-top: 5px;
+	color: #fff; /*color de letra*/
 	
 }
 .nombre{
@@ -291,10 +304,10 @@ footer {
 /*-------LINKS-------*/
 
 .link_gs{
-	color: #000;
+	color: #ffffff;
 }
 .link_gs:hover{
-	color: #21A90F;
+	color: #F7A71E;
 	text-decoration: none;
 }
 .link_sg{
