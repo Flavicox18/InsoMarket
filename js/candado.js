@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     // Agrega un evento de clic a todos los elementos con la clase "candado"
     var candados = document.querySelectorAll(".candado");
