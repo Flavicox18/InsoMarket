@@ -1,0 +1,23 @@
+
+/*--- TAMAÑO DE LA TABLA ---*/
+.tabla-container{
+	max-width: 800px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: auto; /* Esto centrará el contenedor en la página */
+}
+
+/*--- TAMAÑO DE LOS CAMPOS PARA ESCRIBIR ---*/
+.custom-input {
+	width: 75%; /* Ajusta el ancho según tus preferencias */
+	margin: auto; /* Centra horizontalmente */
+}
+
+/*--TITULO --*/
+.titulo{
+	margin: 40px;
+	width: 30%;
+}
+
+/*--- CAMPO DE PRECIO ---*/
+.precio{
+	width: 40%;
+}

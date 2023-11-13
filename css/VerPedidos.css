@@ -1,0 +1,12 @@
+
+/*----- TAMAÑO DE LA TABLA -------*/
+.tabla-container{
+	max-width: 850px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: auto; /* Esto centrará el contenedor en la página */
+}
+
+
+.titulo{
+	margin: 30px;
+	width: 40%;
+}
