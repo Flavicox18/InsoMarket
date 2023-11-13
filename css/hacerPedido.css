@@ -54,6 +54,11 @@ table {
 .table tbody td {
     border: 1px solid #000; /* Borde del cuerpo de la tabla */
 }
+.table .footerTabla{
+    background-color: #06327B; /* Fondo de la cabecera */
+    border: 2px solid #F7A71E; /* Borde de la cabecera */
+    color: #FFF; /* Color del texto en la cabecera, opcional */
+}
 
 #btnSiguiente{
     display: inline-flex;
@@ -115,4 +120,7 @@ table {
 }
 .tipoLabel{
     margin: 3px;
+}
+.hidden {
+    display: none;
 }
