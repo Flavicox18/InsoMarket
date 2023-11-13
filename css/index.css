@@ -6,7 +6,21 @@ nav{
     display: inline-flex;
     align-items: center;
     align-content: center;
+    gap: 5px;
 }
+.opcNav img:last-child{
+    display: none;
+}
+.opcNav:hover img:last-child{
+    display: block;
+}
+.opcNav:hover img:first-child{
+    display: none;
+}
+.opcNav:hover{
+    color: #F7A71E;
+}
+
 .barraBusqueda{
     display: inline-flex;
     padding: 0px;
@@ -34,5 +48,5 @@ nav{
     margin: 0px;
 }
 .opIzq{
-    align-items: end;
+    align-items: left;
 }
