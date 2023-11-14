@@ -1,0 +1,34 @@
+
+/*----- TAMAÑO DE LA TABLA -------*/
+.tabla-container{
+	max-width: 850px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: auto; /* Esto centrará el contenedor en la página */
+}
+
+
+.titulo{
+	margin: 30px;
+	width: 40%;
+}
+
+/* Anula los estilos de fondo del botón de Bootstrap */
+.btn {
+    background-color: transparent !important;
+  }
+  
+
+.table.table-bordered thead.table-dark th{
+    background-color: #06327B; /* Fondo de la cabecera */
+    border: 2px solid #F7A71E; /* Borde de la cabecera */
+    color: #FFF; /* Color del texto en la cabecera, opcional */
+}
+
+.table tbody th,
+.table tbody td {
+    border: 1px solid #000; /* Borde del cuerpo de la tabla */
+}
+
+.footer{
+    background-color: #000;
+    height: 100px;
+}
