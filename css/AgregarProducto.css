@@ -67,3 +67,12 @@
     font-weight: bold;
     line-height: normal;
 }
+
+.campo_borde1{
+    border: 3px solid #000;
+	border-radius: 25px
+}
+
+.error {
+    border: 3px solid red;
+}
