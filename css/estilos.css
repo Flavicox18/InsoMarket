@@ -279,6 +279,7 @@ header {
 }
 .link_sg{
 	color: #000;
+	text-decoration: none;
 }
 .link_sg:hover{
 	color: #000;
