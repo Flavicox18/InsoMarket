@@ -1,0 +1,33 @@
+.btnAgregarCarrito{
+    display: inline-flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    border: 3px solid #06327B;
+    background: #fff;
+    color: #06327B;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.btnAgregarCarrito:hover{
+    transition: 0.3s;
+    border: 3px solid #06327B;
+    background: #F7A71E;
+}
+.btnAgregarCarrito:active{
+    transition: 0.3s;
+    background: #fff;
+}
+.custom-card{
+    padding: 5px;
+}
+.footer{
+    background-color: #000;
+    height: 100px;
+}
