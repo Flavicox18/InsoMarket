@@ -1,0 +1,160 @@
+body {
+	background: rgb(252, 253, 252);
+	color: #000;
+}
+
+header {
+	/* background: #0B6; */
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+footer {
+	padding: 20px;
+	background: #000;
+	color:#fff;
+}
+
+.link_gs{
+	color: #ffffff;
+	text-decoration: none;
+}
+.link_gs:hover{
+	color: #F7A71E;
+	text-decoration: none;
+}
+.link_sg{
+	color: #000;
+}
+.link_sg:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+.titulo{
+	font-size: 50px; 
+	text-align: center; 
+	font-weight: bold;
+}
+
+.titulo_izq{
+	font-size: 50px; 
+	text-align: left; 
+	font-weight: bold;
+}
+
+
+.subtitulo{
+	font-size: 40px; 
+	text-align: center; 
+	font-weight: bold;
+}
+.subtitulo_izq{
+	font-size: 40px; 
+	text-align: left; 
+	font-weight: bold;
+}
+.sub_subtitulo_izq{
+	font-size: 25px; 
+	text-align: left; 
+	font-weight: bold;
+	padding-top: 5px;
+	color: #fff; /*color de letra*/
+}
+.sub_subtitulo_der{
+	font-size: 25px; 
+	text-align: right; 
+	font-weight: bold;
+	padding-top: 5px;
+	color: #fff; /*color de letra*/
+}
+
+.container-minimo{
+	min-height: 660px;
+}
+.container-fluid {
+	max-width: 1700px;
+}
+.container-peque{
+	max-width: 1000px;
+	max-height: 700px;
+	background-color: #06327B;
+	border-radius: 25px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.textodes{
+    color: #fff;
+}
+
+.btn-cancelar {
+	margin: 10px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #ffffff; /*color de fondo*/
+	color: #000000; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+
+.btn-cancelar:hover {
+	text-decoration: none;
+	margin: 10px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px
+}
+
+.btn-confirmar {
+	margin: 10px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #F7A71E; /*color de fondo*/
+	color: #000000; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px;
+	text-decoration: none;
+}
+.btn-confirmar:hover {
+	text-decoration: none;
+	margin: 10px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #F7A71E; /*color de fondo*/
+	color: #000; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px;
+	text-decoration: none;
+}
+.btn-confirmar:active {
+	text-decoration: none;
+	margin: 10px; /* Establece márgenes automáticos horizontalmente */
+	text-align: center; /* Centra el texto dentro del botón */
+	background-color: #F7A71E; /*color de fondo*/
+	color: #000; /*color de letra*/
+	height: 50px; /*altura*/
+	width: 200px ; /*ancho*/
+	font-size: 20px; /*tamaño de letra*/
+	border: 3px solid #000;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.campo_borde{
+	border: 3px solid #000;
+	border-radius: 25px
+}

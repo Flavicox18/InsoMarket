@@ -35,6 +35,11 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+    float: right;
+}
+
+.btn-amarillo-container {
+    text-align: right; /* Alinea el contenido a la derecha */
 }
 
 .btn-amarillo:hover {
