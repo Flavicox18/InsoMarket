@@ -59,7 +59,7 @@ footer {
 .container-peque{
 	max-width: 800px;
 	max-height: 700px;
-	background-color: #21A90F;
+	background-color: #06327B;
 	border-radius: 25px
 }
 .container-agregar{
@@ -154,8 +154,8 @@ footer {
 	display: block; /* Convierte el botón en un elemento de bloque */
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
-	background-color: rgb(122, 149, 239); /*color de fondo*/
-	color: #ffffff; /*color de letra*/
+	background-color: #e9980b; /*color de fondo*/
+	color: #000000; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
@@ -258,6 +258,15 @@ footer {
 .sub_subtitulo_izq{
 	font-size: 25px; 
 	text-align: left; 
+	font-weight: bold;
+	padding-top: 5px;
+	color: #fff; /*color de letra*/
+	
+}
+
+.sub_subtitulo{
+	font-size: 25px; 
+	text-align: center; 
 	font-weight: bold;
 	padding-top: 5px;
 	color: #fff; /*color de letra*/
