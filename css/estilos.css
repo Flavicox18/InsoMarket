@@ -284,3 +284,10 @@ header {
 	color: #000;
 	text-decoration: none;
 }
+.error {
+    border: 1px solid red;
+}
+
+.textodes{
+    color: #fff;
+}

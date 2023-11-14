@@ -29,10 +29,17 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="">
+                                <a class="nav-link opcNav" href="./VerPedidos.html">
+                                    <img src="img/misPedidos.svg" height="45px" width="45px">
+                                    <img src="img/misPedidosA.svg" height="45px" width="45px">
+                                    Pedidos
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link opcNav" href="./index.html">
                                     <img src="img/perfil.svg" height="45px" width="45px">
                                     <img src="img/perfilA.svg" height="45px" width="45px">
-                                    Perfil
+                                    Cerrar Sesion
                                 </a>
                             </li>
                         </ul>
@@ -47,21 +54,21 @@
     <div class="container text-center">
         <div class="row mb-3">
             <div class="col-12 col-md-4">
-                <label for="cliente" class="form-label">Cliente:</label>
+                <label for="cliente" class="form-label" >Cliente:</label>
                 <input id="cliente" class="form-control form-control-sm custom-input" type="text"
-                    placeholder="Nombre del cliente" aria-label="Cliente">
+                    placeholder="Juan Perez" aria-label="Cliente" disabled>
             </div>
 
             <div class="col-12 col-md-4">
                 <label for="fecha" class="form-label">Fecha:</label>
-                <input id="fecha" class="form-control form-control-sm custom-input" type="text" placeholder="Fecha"
-                    aria-label="Fecha">
+                <input id="fecha" class="form-control form-control-sm custom-input" type="text" placeholder="14/11/2023 18:00"
+                    aria-label="Fecha" disabled>
             </div>
 
             <div class="col-12 col-md-4">
                 <label for="pedido" class="form-label">N° de pedido:</label>
                 <input id="pedido" class="form-control form-control-sm custom-input" type="text"
-                    placeholder="N° de pedido" aria-label="N° de pedido">
+                    placeholder="00000001" aria-label="N° de pedido" disabled>
             </div>
 
         </div>
@@ -70,12 +77,12 @@
             <div class="col-12 col-md-4">
                 <label for="direccion" class="form-label">Dirección:</label>
                 <input id="direccion" class="form-control form-control-sm custom-input" type="text"
-                    placeholder="Dirección" aria-label="Dirección">
+                    placeholder="La Cucardas 12" aria-label="Dirección" disabled>
             </div>
 
             <div class="col-12 col-md-4">
                 <label for="fechaEntrega" class="form-label">Fecha de entrega:</label>
-                <input id="fechaEntrega" class="form-control form-control-sm custom-input" type="text"
+                <input id="fechaEntrega" class="form-control form-control-sm custom-input" type="datetime-local"
                     placeholder="Fecha de entrega" aria-label="Fecha de entrega">
             </div>
 
