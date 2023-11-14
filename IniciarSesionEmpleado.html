@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>MiniMarket- Iniciar Sesión Empleado</title>
+    <title>MiniMarket - Iniciar Sesión Empleado</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg ">
@@ -39,20 +40,24 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div class="row">
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Iniciar Sesión Empleado</p>
                 <div class=" container container-delgado">
                     <div class="row">
-                        <div class="col">
-                            <p class="sub_subtitulo_izq">Correo</p>
-                            <input type="email" class="form-control campo_borde" placeholder="example@example.com">
-
-                            <p class="sub_subtitulo_izq">Contraseña</p>
-                            <input type="password" class="form-control campo_borde" placeholder="************">
+                            <div class="col">
+                                <label for="correo" class="sub_subtitulo_izq">Correo</label>
+                                <input id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com">
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="contraseña" class="sub_subtitulo_izq">Contraseña</label>
+                                <input id="contraseña" class="form-control campo_borde" type="password" placeholder="************">
+                            </div>
+                        </div>
                     <p class="sub_subtitulo_izq">Cargo</p>
                     <form>
                         <select id="categoria" name="categoria" class="cargo">
@@ -70,7 +75,7 @@
 
                         <div class="col">
                             <a href="MainAdministrador.html" class="link_gs"><button type="button"
-                                    class="btn-confirmar"><b>Iniciar
+                                    class="btn-confirmar" onclick="validarSesion()"><b>Iniciar
                                         Sesión</b></button></a>
                         </div>
                     </div>
@@ -83,12 +88,10 @@
         <div class="container-fluid"></div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/validarSesion.js"></script>
 
 </body>
 
