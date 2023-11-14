@@ -156,7 +156,7 @@ footer {
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #F7A71E; /*color de fondo*/
-	color: #000 /*color de letra*/
+	color: #000; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
@@ -170,7 +170,7 @@ footer {
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #F7A71E; /*color de fondo*/
-	color: #000 /*color de letra*/
+	color: #000; /*color de letra*/
 	height: 50px; /*altura*/
 	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/

@@ -31,11 +31,11 @@ nav{
 }
 .categoria{
     display: inline-flex;
-    padding: 10px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
 
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
     border: 1px solid #000;
     background: #FFF;
     margin: 0px;
