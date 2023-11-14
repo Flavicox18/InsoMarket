@@ -9,9 +9,10 @@ header {
 	margin-bottom: 0px;
 }
 
-footer {
-	padding: 20px;
-	background: #000;
+.footer {
+	margin-top: 10px;
+	height: 100px;
+	background-color: #000;
 	color:#fff;
 }
 
@@ -115,132 +116,74 @@ footer {
 }
 
 /*-------BOTONES-------*/
-
-.btn-reserva {
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 0 auto; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #000; /*color de fondo*/
-	color: #fff; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
-	font-size: 20px; /*tamaño de letra*/
-}
-.btn-buscar {
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 30px 30px ; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #000; /*color de fondo*/
-	color: #fff; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
-	font-size: 20px; /*tamaño de letra*/
-	border-radius: 25px /*Borde del boton*/
-}
 .btn-confirmar {
-	display: block; /* Convierte el botón en un elemento de bloque */
+	display: flex;
+	align-items: center;
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #F7A71E; /*color de fondo*/
 	color: #000000; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
 	border: 3px solid #000;
 	border-radius: 25px;
 	text-decoration: none;
+	padding: 5px 15px;
+	transition: 0.3s;
 }
 .btn-confirmar:hover {
-	text-decoration: none;
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #F7A71E; /*color de fondo*/
+	background-color: #e49000; /*color de fondo*/
 	color: #000; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
-	font-size: 20px; /*tamaño de letra*/
-	border: 3px solid #000;
-	border-radius: 25px;
-	text-decoration: none;
+	transition: 0.3s;
 }
 .btn-confirmar:active {
-	text-decoration: none;
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #F7A71E; /*color de fondo*/
 	color: #000; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
-	font-size: 20px; /*tamaño de letra*/
-	border: 3px solid #000;
-	border-radius: 25px;
-	text-decoration: none;
-
+	transition: 0.3s;
 }
 .btn-cancelar {
-	display: block; /* Convierte el botón en un elemento de bloque */
+	display: flex;
+ 	align-items: center;
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #ffffff; /*color de fondo*/
 	color: #000000; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
 	font-size: 20px; /*tamaño de letra*/
 	border: 3px solid #000;
-	border-radius: 25px
+	border-radius: 25px;
+	padding: 5px 37px;
+	transition: 0.3s;
 }
 .btn-cancelar:hover {
-	text-decoration: none;
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
 	background-color: #000; /*color de fondo*/
 	color: #fff; /*color de letra*/
-	height: 50px; /*altura*/
-	width: 200px ; /*ancho*/
-	font-size: 20px; /*tamaño de letra*/
-	border: 3px solid #000;
-	border-radius: 25px
+	transition: 0.3s;
 }
-.btn-eliminar {
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 2px 2px; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #21A90F; /*color de fondo*/
-	color: #fff; /*color de letra*/
-	height: 45px; /*altura*/
-	width: 45px ; /*ancho*/
-	padding: 5px;
-	border: 3px solid #000;
-	border-radius: 10px
+.btn-cancelar:active {
+	background-color: #ffffff; /*color de fondo*/
+	color: #000000; /*color de letra*/
+	transition: 0.1s;
 }
-.btn-eliminar:hover {
-	text-decoration: none;
-	display: block; /* Convierte el botón en un elemento de bloque */
-	margin: 2px 2px; /* Establece márgenes automáticos horizontalmente */
-	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #21A90F; /*color de fondo*/
-	color: #fff; /*color de letra*/
-	height: 45px; /*altura*/
-	width: 45px ; /*ancho*/
-	padding: 5px;
-	border: 3px solid #000;
-	border-radius: 10px
-}
-.btn-horario {
-	display: block; /* Convierte el botón en un elemento de bloque */
+.btn-IsEmp{
+	display: flex;
+	align-items: center;
 	margin: 10px auto; /* Establece márgenes automáticos horizontalmente */
 	text-align: center; /* Centra el texto dentro del botón */
-	background-color: #21A90F; /*color de fondo*/
-	color: #fff; /*color de letra*/
-	min-height:50px ;
-	min-width: 30px;
-	padding: 5px;
-	font-size: 20px; /*tamaño de letra*/
+	background-color: #ffffff; /*color de fondo*/
+	color: #000000; /*color de letra*/
+	font-size: 15px; /*tamaño de letra*/
 	border: 3px solid #000;
-	border-radius: 25px
+	border-radius: 25px;
+	padding: 2px 5px;
+	transition: 0.3s;
+}
+.btn-IsEmp:hover{
+	background-color: #000; /*color de fondo*/
+	color: #fff; /*color de letra*/
+	transition: 0.3s;
+}
+.btn-IsEmp:active {
+	background-color: #ffffff; /*color de fondo*/
+	color: #000000; /*color de letra*/
+	transition: 0.1s;
 }
 /*-------CAMPOS PA RELLENAR-------*/
 
@@ -276,7 +219,7 @@ footer {
 	font-size: 25px; 
 	text-align: left; 
 	font-weight: bold;
-	padding-top: 5px;
+	margin: 5px;
 	color: #fff; /*color de letra*/
 }
 .sub_subtitulo_der{

@@ -31,11 +31,11 @@ nav{
 }
 .categoria{
     display: inline-flex;
-    padding: 12px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-
-    border-radius: 15px;
+    width: 40%;
+    border-radius: 15px 0px 0px 15px;
     border: 1px solid #000;
     background: #FFF;
     margin: 0px;
@@ -47,10 +47,22 @@ nav{
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #000;
     background: #FFF;
+    width: 60%;
 }
 .botonBuscar{
     margin: 0px;
 }
 .opIzq{
     align-items: left;
+}
+.cargo{
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin: 0px;
 }
