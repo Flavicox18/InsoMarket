@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container ">
                 <div class="col-4">
-                    <a class="navbar-brand " href="index.html">
+                    <a class="navbar-brand " href="#">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -142,7 +142,7 @@
                                 <th scope="row">5</th>
                                 <td scope="col">Tomatodo</td>
                                 <td scope="col">1</td>
-                                <td scope="col">30</td>
+                                <td scope="col">10</td>
                             </tr>
 
                         </tbody>
@@ -160,9 +160,17 @@
                         <option value="2">Tarjeta</option>
                     </select>
 
-                    <label for="total">Total</label>
-                    <input class="form-control precio custom-input" type="text" value="47.50"
-                        aria-label="Texto deshabilitado" disabled readonly>
+                    <label for="costo" class="form-label">Costo de envío:</label>
+                    <input id="costo" class="form-control form-control-sm custom-input" type="text"
+                        placeholder="S/. 3.00" aria-label="Texto deshabilitado" disabled readonly>
+            
+                    <label for="total" class="form-label">Costo de productos:</label>
+                    <input id="total" class="form-control form-control-sm custom-input" type="text"
+                        placeholder="29.50" aria-label="Texto deshabilitado" disabled readonly>
+
+                    <label for="total" class="form-label">Total:</label>
+                    <input id="total" class="form-control form-control-sm custom-input" type="text"
+                        placeholder="32.50" aria-label="Texto deshabilitado" disabled readonly>
                 </div>
             </div>
         </div>

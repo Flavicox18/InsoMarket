@@ -20,7 +20,7 @@
 	width: 40%;
 }
 
-.btn-puto{
+.btn-amarillo {
     display: inline-flex;
     padding: 5px;
     justify-content: center;
@@ -29,12 +29,48 @@
     border-radius: 20px;
     border: 3px solid #000;
     background: #F7A71E;
-
     color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.btn-amarillo:hover {
+    background: #F7A71E; /* Mantener el mismo color de fondo */
+    color: #000; /* Mantener el mismo color de texto */
+    border: 3px solid #000;
+}
+
+
+#eliminarModal .modal-content {
+    background-color: #06327B; /* Fondo azul */
+    color: #ffffff; /* Texto en blanco para un mejor contraste */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más agradable */
+}
+
+.btn-azulito{
+    display: inline-flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    border: 3px solid #000;
+    background: #133364;
+
+    color: #ffffff;
 
     text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+}
+
+.btn-azulito:hover {
+    background: #133364; /* Fondo azul */
+    color: #ffffff; /* Texto en blanco para un mejor contraste */
+    border: 3px solid #000;
 }
