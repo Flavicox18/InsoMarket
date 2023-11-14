@@ -1,6 +1,10 @@
 nav{
     background-color: #06327B;
 }
+.navbar-expand-lg{
+
+    width: 100%;
+}
 .opcNav{
     color: #fff;
     display: inline-flex;
@@ -27,7 +31,7 @@ nav{
 }
 .categoria{
     display: inline-flex;
-    padding: 11px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
 

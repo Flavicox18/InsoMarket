@@ -1,0 +1,236 @@
+.box {
+    position: relative;
+    width: 878px;
+    height: 653px;
+}
+
+.box .group {
+    position: fixed;
+    width: 878px;
+    height: 653px;
+    top: 0;
+    left: 0;
+}
+
+.box .input {
+    display: flex;
+    flex-direction: column;
+    width: 411px;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box .label {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.box .frame {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.box .text {
+    margin-top: -3px;
+    position: relative;
+    flex: 1;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #999999;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.box .input-x {
+    width: 411px;
+    height: 249px;
+    top: 107px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.box .div {
+    position: relative;
+    flex: 1;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #999999;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.box .input-2 {
+    width: 244px;
+    height: 75px;
+    top: 465px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .input-3 {
+    width: 150px;
+    height: 75px;
+    top: 373px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .input-4 {
+    width: 214px;
+    height: 75px;
+    top: 373px;
+    left: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .input-5 {
+    width: 144px;
+    height: 75px;
+    top: 465px;
+    left: 267px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .input-6 {
+    width: 350px;
+    top: 477px;
+    left: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.box .div-wrapper {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.box .rectangle {
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    top: 16px;
+    left: 528px;
+    background-color: #d9d9d9;
+}
+
+.box .boton-pd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 609px;
+    left: 386px;
+    background-color: #f7a71e;
+    border-radius: 20px;
+    border: 3px solid;
+    border-color: #000000;
+}
+
+.box .BOTON {
+    color: #000000;
+    position: relative;
+    width: fit-content;
+    font-family: "League Spartan-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.box .boton-pd-x {
+    display: flex;
+    width: 269px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 606px;
+    left: -6px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 3px solid;
+}
+
+.box .BOTON-2 {
+    margin-top: -3px;
+    color: #ffffff;
+    position: relative;
+    width: fit-content;
+    font-family: "League Spartan-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
