@@ -191,6 +191,10 @@ header {
 	border: 3px solid #000;
 	border-radius: 25px
 }
+.campo_borde:focus{
+	border: 3px solid #e49000;
+	border-radius: 25px
+}
 /*-------TITULOS-------*/
 
 .titulo{
@@ -291,4 +295,15 @@ header {
 
 .textodes{
     color: #fff;
+}
+
+/*---------msg de error-------------*/
+.mensajeError{
+    color: red;
+    font-size: small;
+}
+
+/*--------ARREGLOS A BOOTSTRAP-------*/
+.col{
+	margin-top: 0px;
 }

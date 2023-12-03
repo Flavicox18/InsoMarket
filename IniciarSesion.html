@@ -51,33 +51,32 @@
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Iniciar Sesión</p>
                 <div class=" container container-delgado">
-                    <form>
+                    <form method="post" id="iniciarSesionFormulario" onsubmit="return redirigirACatalogo()">
                         <div class="row">
                             <div class="col">
                                 <label for="correo" class="sub_subtitulo_izq">Correo</label>
-                                <input id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com">
+                                <input id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
+                                <small id="correoHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="contraseña" class="sub_subtitulo_izq">Contraseña</label>
-                                <input id="contraseña" class="form-control campo_borde" type="password" placeholder="************">
+                                <input id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
+                                <small id="contraseñaHelp" class="form-text mensajeError"></small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row g-3">
+                            <div class="col">
+                                <button type="button" class="btn-cancelar"><b>Cancelar</b></button>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button>
                             </div>
                         </div>
                     </form>
-                    <br>
-                    <div class="row g-3">
-                        <div class="col">
-                            <a href="index.html" class="link_gs"><button type="button"
-                               class="btn-cancelar"><b>Cancelar</b></button></a>
-                        </div>
-
-                        <div class="col">
-                            <a href="Catalogo.html" class="link_gs"><button type="button"
-                                    class=" btn-confirmar" onclick="validarSesion()"><b>Iniciar Sesión</b></button></a>
-                        </div>
-                    </div>
-                    <div id="IniciarSesionEmpleado" class="row" >
+                    <div id="IniciarSesionEmpleado" class="row">
                         <div class="col">
                             <a href="IniciarSesionEmpleado.html" class="link_gs"><button type="button"
                                     class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
@@ -96,7 +95,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/validarSesion.js"></script>
+    <script src="js/iniciarSesion.js"></script>
 
 </body>
 
