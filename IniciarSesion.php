@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container ">
                 <div class="col-4">
-                    <a class="navbar-brand " href="index.html">
+                    <a class="navbar-brand " href="./index.php">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,7 +32,7 @@
                             <li class="nav-item ">
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="./Registrarse.html">
+                                <a class="nav-link opcNav" href="./Registrarse.php">
                                     <img src="img/perfil.svg" height="50px" width="50px">
                                     <img src="img/perfilA.svg" height="50px" width="50px">
                                     Registrarse
@@ -69,10 +69,10 @@
                         <br>
                         <div class="row g-3">
                             <div class="col">
-                                <button type="button" class="btn-cancelar"><b>Cancelar</b></button>
+                            <a href="./index.php" class="link_gs"><button type="button" class="btn-cancelar"><b>Cancelar</b></button>
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button>
+                            <a href="./Catalogo.php" class="link_gs"><button type="submit" href="./Catalogo.php" class="btn-confirmar"><b>Iniciar Sesión</b></button>
                             </div>
                         </div>
                     </form>

@@ -17,7 +17,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container ">
                     <div class="col-4">
-                        <a class="navbar-brand " href="index.html">
+                        <a class="navbar-brand " href="./index.php">
                             <img src="img/Logo.png" alt="Logo" width="75" height="75">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item ">
-                                    <a class="nav-link opcNav" href="index.html">
+                                    <a class="nav-link opcNav" href="./index.php">
                                         <img src="img/perfil.svg" height="45px" width="45px">
                                         <img src="img/perfilA.svg" height="45px" width="45px">
                                         Cancelar registro
@@ -82,7 +82,7 @@
 
                             <div class="row g-3">
                                 <div class="col">
-                                    <a href="index.html" class="link_gs"><button type="button" class="btn btn-cancelar"><b>Cancelar</b></button></a>
+                                    <a href="./IniciarSesion.php" class="link_gs"><button type="button" class="btn btn-cancelar"><b>Cancelar</b></button></a>
                                 </div>
 
                                 <div class="col">

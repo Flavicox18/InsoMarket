@@ -20,7 +20,7 @@ include 'php/conexion.php';
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./index.php">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,14 +45,14 @@ include 'php/conexion.php';
 
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="IniciarSesion.php">
+                            <a class="nav-link opcNav" href="./IniciarSesion.php">
                                 <img src="img/perfil.svg" height="50px" width="50px">
                                 <img src="img/perfilA.svg" height="50px" width="50px">
                                 Iniciar Sesion
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="IniciarSesion.php">
+                            <a class="nav-link opcNav" href="./IniciarSesion.php">
                                 <img src="img/carrito.svg" height="45px" width="45px">
                                 <img src="img/carritoA.svg" height="45px" width="45px">
                             </a>
