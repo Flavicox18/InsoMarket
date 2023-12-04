@@ -66,7 +66,7 @@
     <h1 class="titulo">Agregar Producto</h1>
 
     <div class="container mt-4">
-        <form method="get" id="agregarProductoForm">
+        <form action='./php/Agregar_producto.php' method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
@@ -130,7 +130,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="imgProducto" class="form-label">Subir imagen del producto:</label>
-                            <input type="file" class="form-control campo_borde1" id="imgProducto" accept="image/*"
+                            <input type="file" class="form-control campo_borde1" id="imgProducto" name="imagen" accept="image/*"
                                 onchange="mostrarImagen()">
                         </div>
                     </div>
@@ -140,7 +140,7 @@
 
             <div class="row mt-3">
                 <div class="col-md-6">
-                    <a href="GestionarProductos.html">
+                    <a href="GestionarProductos.php">
                         <button type="button" class="btn-azulito w-50">Cancelar</button>
                     </a>
                 </div>
@@ -152,7 +152,6 @@
                 </div>
             </div>
         </form>
-
     </div>
 
     <footer class="footer">

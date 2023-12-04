@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
@@ -59,6 +60,7 @@
             </div>
         </div>
     </nav>
+    
     <div id="GestionarProductos" class="container">
         <br>
         <div class="row ">
@@ -66,58 +68,76 @@
                 <h1>Gestionar Productos</h1>
             </div>
             <div class="col-6 d-flex justify-content-end link-sg">
-                <a href="AgregarProducto.html"> <button id="btnSiguiente">Agregar Productos</button></a>
+                <a href="AgregarProducto.php"> <button id="btnSiguiente">Agregar Productos</button></a>
             </div>
         </div>
 
         <table class="table table-hover table-bordered">
-            <thead class="table-dark">
-                <tr class="table-dark">
-                    <th scope="col">id</th>
-                    <th scope="col" colspan="2">Producto</th>
-                    <th scope="col">Categoria</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">00000001</th>
-                    <td scope="col"><img src="img/CocaCola.png" class="img-fluid" alt="Coca Cola" height="50px"
-                            width="50px"></td>
-                    <td scope="col">Coca Cola</td>
-                    <td scope="col">Gaseosas</td>
-                    <td scope="col">100</td>
-                    <td scope="col">S/.2.50</td>
-                </tr>
-                <tr>
-                    <th scope="row">00000002</th>
-                    <td scope="col"><img src="img/Sublime.jpg" class="img-fluid" alt="Coca Cola" height="50px"
-                            width="50px"></td>
-                    <td scope="col">Sublime</td>
-                    <td scope="col">Chocolates</td>
-                    <td scope="col">100</td>
-                    <td scope="col">S/.1.20</td>
-                </tr>
-                <tr>
-                    <th scope="row">00000003</th>
-                    <td scope="col"><img src="img/Inkacola.jpg" class="img-fluid" alt="Coca Cola" height="50px"
-                            width="50px"></td>
-                    <td scope="col">Inka Kola</td>
-                    <td scope="col">Gaseosas</td>
-                    <td scope="col">100</td>
-                    <td scope="col">S/.2.50</td>
-                </tr>
-                <tr>
-                    <th scope="row">00000004</th>
-                    <td scope="col"><img src="img/SodaSanJorge.jpg" class="img-fluid" alt="Coca Cola" height="50px"
-                            width="50px"></td>
-                    <td scope="col">Soda San Jorge</td>
-                    <td scope="col">Galletas</td>
-                    <td scope="col">100</td>
-                    <td scope="col">S/.1.20</td>
-                </tr>
-            </tbody>
+        
+        <?php
+            // Inicia la sesión para poder acceder a las variables de sesión
+            session_start();
+
+            // Muestra el mensaje de éxito si se ha agregado un producto
+            if (isset($_SESSION['producto_agregado']) && $_SESSION['producto_agregado']) {
+                echo '<div class="alert alert-success" role="alert">
+                    Producto agregado exitosamente.
+                    </div>';
+                // Limpiar la variable de sesión después de mostrar el mensaje
+                $_SESSION['producto_agregado'] = false;
+            }
+
+            // Conexión a la base de datos (reemplaza los valores con tus propias credenciales)
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "InsoMarket";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Verificar la conexión
+            if ($conn->connect_error) {
+                die("Conexión fallida: " . $conn->connect_error);
+            }
+
+            // Consulta SQL para obtener los productos de la base de datos
+            $sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio FROM producto";
+
+            // Ejecutar la consulta
+            $result = $conn->query($sqlObtenerProductos);
+
+            if ($result->num_rows > 0) {
+                // Mostrar los productos en la tabla
+                echo '<thead class="table-dark">
+                        <tr class="table-dark">
+                            <th scope="col">id</th>
+                            <th scope="col" colspan="2">Producto</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>';
+
+                while ($row = $result->fetch_assoc()) {
+                    echo '<tr>
+                            <th scope="row">' . $row['id'] . '</th>
+                            <td scope="col"><img src="img/' . $row['nombre'] . '.png" class="img-fluid" alt="' . $row['nombre'] . '" height="50px" width="50px"></td>
+                            <td scope="col">' . $row['nombre'] . '</td>
+                            <td scope="col">' . $row['categoria'] . '</td>
+                            <td scope="col">' . $row['cantidad'] . '</td>
+                            <td scope="col">' . $row['precio'] . '</td>
+                        </tr>';
+                }
+
+                echo '</tbody>';
+            } else {
+                echo '<p>No hay productos disponibles.</p>';
+            }
+
+            // Cerrar la conexión
+            $conn->close();
+            ?>
         </table>
     </div>
     <footer class=" footer fixed-bottom   ">
