@@ -45,13 +45,13 @@ if (empty($nombre) || empty($precio) || empty($categoria) || empty($cantidad) ||
 }
 
 // Manejar la carga de la imagen
-$nombreImagen = $_FILES['imagen'];
+$nombreImagen = $_FILES['imagen']['name'];
 $directorioImagen = "../img/" . $nombreImagen;  // Ruta donde se guardará la imagen
 
 if (move_uploaded_file($_FILES['imagen']['tmp_name'], $directorioImagen)) {
-    // Consulta SQL para insertar el producto con la ruta de la imagen
+    // Consulta SQL para insertar el producto con el nombre de la imagen
     $sqlInsertarProducto = "INSERT INTO producto (nombre, descripcion, precio, categoria, cantidad, peso, imagen) 
-                            VALUES ('$nombre', '$descripcion', $precio, '$categoria', $cantidad, $peso, '$directorioImagen')";
+                            VALUES ('$nombre', '$descripcion', $precio, '$categoria', $cantidad, $peso, '$nombreImagen')";
 
     // Ejecutar la consulta para insertar el producto
     if ($conn->query($sqlInsertarProducto) === TRUE) {

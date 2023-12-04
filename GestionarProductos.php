@@ -101,7 +101,7 @@
             }
 
             // Consulta SQL para obtener los productos de la base de datos
-            $sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio FROM producto";
+            $sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio, imagen FROM producto";
 
             // Ejecutar la consulta
             $result = $conn->query($sqlObtenerProductos);
@@ -119,16 +119,19 @@
                     </thead>
                     <tbody>';
 
-                while ($row = $result->fetch_assoc()) {
-                    echo '<tr>
-                            <th scope="row">' . $row['id'] . '</th>
-                            <td scope="col"><img src="img/' . $row['nombre'] . '.png" class="img-fluid" alt="' . $row['nombre'] . '" height="50px" width="50px"></td>
-                            <td scope="col">' . $row['nombre'] . '</td>
-                            <td scope="col">' . $row['categoria'] . '</td>
-                            <td scope="col">' . $row['cantidad'] . '</td>
-                            <td scope="col">' . $row['precio'] . '</td>
-                        </tr>';
-                }
+                    while ($row = $result->fetch_assoc()) {
+                        // Construye la ruta completa a la imagen
+                        $imagenRuta = '/InsoMarket/img/' . $row['imagen'];
+                    
+                        echo '<tr>
+                                <th scope="row">' . $row['id'] . '</th>
+                                <td scope="col"><img src="' . $imagenRuta . '" class="img-fluid" alt="' . $row['nombre'] . '" height="50px" width="50px"></td>
+                                <td scope="col">' . $row['nombre'] . '</td>
+                                <td scope="col">' . $row['categoria'] . '</td>
+                                <td scope="col">' . $row['cantidad'] . '</td>
+                                <td scope="col">' . $row['precio'] . '</td>
+                            </tr>';
+                    }                                      
 
                 echo '</tbody>';
             } else {
