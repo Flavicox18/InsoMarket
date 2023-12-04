@@ -1,8 +1,6 @@
 <?php
-
 include '../clases/usuario.php';
 
-// Parámetros de conexión a la base de datos
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -14,6 +12,24 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Verificar la conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Consulta para crear la tabla usuarios si no existe
+$sqlCreateTable = "
+CREATE TABLE IF NOT EXISTS usuario (
+    idUsuario INT(8) AUTO_INCREMENT PRIMARY KEY,
+    correo VARCHAR(100),
+    contraseña VARCHAR(16),
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    telefono INT(9),
+    tipo VARCHAR(10)
+)";
+
+if ($conn->query($sqlCreateTable) === TRUE) {
+    echo "Tabla usuarios creada correctamente.";
+} else {
+    echo "Error al crear la tabla: " . $conn->error;
 }
 
 // Obtener datos del formulario
@@ -40,13 +56,12 @@ $sql = "INSERT INTO usuario (correo, contraseña, nombre, apellido, telefono, ti
 
 if ($conn->query($sql) === TRUE) {
     // Redirigir a la página de inicio de sesión
-    header('Location: ../../IniciarSesion.html');
+    header('Location: ../../IniciarSesion.php');
     exit(); // Asegúrate de detener la ejecución del script después de redirigir
 } else {
     echo "Error al registrar el usuario: " . $conn->error;
 }
 
-// Cerrar la conexión
+// Cerrar la conexión (ahora se cierra después de la inserción)
 $conn->close();
-
 ?>

@@ -307,3 +307,13 @@ header {
 .col{
 	margin-top: 0px;
 }
+
+.alertaError{
+	margin: 10px;
+	transition: 0.3;
+	background-color: #fdb3b3;
+	border: 2px solid #ff5555;
+	color: #000;
+	font-size: 16px;
+	padding: 10px;
+}

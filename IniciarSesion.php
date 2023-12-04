@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,8 +25,7 @@
                     <a class="navbar-brand " href="./index.php">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -51,7 +54,7 @@
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Iniciar Sesión</p>
                 <div class=" container container-delgado">
-                    <form method="post" id="iniciarSesionFormulario"  action="./php/metodos/metodoIniciarSesion.php" onsubmit="return redirigirACatalogo()">
+                    <form method="post" id="iniciarSesionFormulario" action="./php/metodos/metodoIniciarSesion.php">
                         <div class="row">
                             <div class="col">
                                 <label for="correo" class="sub_subtitulo_izq">Correo</label>
@@ -67,22 +70,36 @@
                             </div>
                         </div>
                         <br>
-                        <div class="row g-3">
+                        <div class="row">
                             <div class="col">
-                            <a href="./index.php" class="link_gs"><button type="button" class="btn-cancelar"><b>Cancelar</b></button>
+                                <a href="./index.php" class="link_gs"><button type="button" class="btn-cancelar"><b>Cancelar</b></button></a>
                             </div>
                             <div class="col">
-                            <a href="./Catalogo.php" class="link_gs"><button type="submit" href="./Catalogo.php" class="btn-confirmar"><b>Iniciar Sesión</b></button>
+                                <button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button>
                             </div>
                         </div>
                     </form>
 
                     <div id="IniciarSesionEmpleado" class="row">
                         <div class="col">
-                            <a href="IniciarSesionEmpleado.html" class="link_gs"><button type="button"
-                                    class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
+                            <a href="IniciarSesionEmpleado.html" class="link_gs"><button type="button" class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
                         </div>
                     </div>
+                    <?php
+                    // Mostrar mensaje de error si está presente
+                    if (isset($_SESSION['error'])) {
+                        echo '<div class="alertaError">' . $_SESSION['error'] . '</div>';
+                        unset($_SESSION['error']); // Limpiar el mensaje de error después de mostrarlo
+                    }
+
+                    // Mostrar datos enviados desde el formulario (para depuración)
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        echo "<h2>Datos enviados desde el formulario:</h2>";
+                        echo "Correo: " . $_POST["correo"] . "<br>";
+                        echo "Contraseña: " . $_POST["contraseña"] . "<br>";
+                    }
+                    ?>
+                    <br>
                 </div>
             </div>
         </div>
