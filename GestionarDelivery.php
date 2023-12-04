@@ -64,7 +64,7 @@
   </nav>
 
 
-  
+
   <h1 class="container titulo">Gestionar Delivery</h1>
 
   <div class="tabla-container">
@@ -157,7 +157,7 @@
         </tr>
 
         <tr>
-          <th scope="row">El Porvenir</th>
+          <th scope="row">El Porvenir</th>  
           <td scope="col">S/.12.00</td>
           <td scope="col" class="text-center"><span class="material-icons">
               <span class="material-icons candado" id="candado">
