@@ -1,3 +1,11 @@
+<?php
+
+include 'php/conexion.php';
+
+$sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio, imagen FROM producto";
+$result = $conn->query($sqlObtenerProductos);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -67,64 +75,14 @@
             <div class="row">
                 <h1>Catalogo</h1>
                 <?php
-                // Conecta a la base de datos
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "InsoMarket";
-
-                $conn = new mysqli($servername, $username, $password, $dbname);
-
-                // Verificar la conexión
-                if ($conn->connect_error) {
-                    die("Conexión fallida: " . $conn->connect_error);
-                }
-
-                // Realizar la consulta para obtener la cantidad de productos
-                $sqlCantidadProductos = "SELECT COUNT(*) as cantidad FROM producto";
-                $resultCantidadProductos = $conn->query($sqlCantidadProductos);
-
-                if ($resultCantidadProductos) {
-                    $rowCantidadProductos = $resultCantidadProductos->fetch_assoc();
-                    $cantidad_de_productos = $rowCantidadProductos['cantidad'];
-                    echo '<p>(' . $cantidad_de_productos . ' productos)</p>';
-                } else {
-                    echo '<p>No hay productos disponibles.</p>';
-                }
+                    include 'php/catalogo.php';
                 ?>
             </div>
+
             <div class="row">
-
-            <?php
-                // Realizar la consulta para obtener la lista de productos
-                $sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio, imagen FROM producto";
-                $result = $conn->query($sqlObtenerProductos);
-
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-
-                        $imagenRuta = '/InsoMarket/img/' . $row['imagen'];
-
-                        echo '<div class="col-md-3">
-                                <div class="card custom-card">
-                                <img src="' . $imagenRuta . '" class="img-fluid" alt="' . $row['nombre'] . '" height="250px" width="250px">
-                                    <div class="card-body">
-                                        <h5 class="card-title">' . $row['nombre'] . '</h5>
-                                        <p class="card-text">Price: $' . $row['precio'] . '</p>
-                                        <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                                    </div>
-                                </div>
-                                <br>
-                            </div>';
-                    }
-                } else {
-                    echo '<p>No hay productos disponibles.</p>';
-                }
-
-                // Cerrar la conexión
-                $conn->close();
+                <?php
+                    include 'php/catalogo_cards.php';
                 ?>
-
             </div>
             <br>
         </div>

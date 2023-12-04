@@ -1,3 +1,8 @@
+<?php
+
+include 'php/conexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -61,49 +66,14 @@
         <div class="container">
             <div class="row">
                 <h1>Catalogo</h1>
-                <p>(xxx productos)</p>
+                <?php
+                    include 'php/catalogo.php';
+                ?>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: S/.XX.XX</p>
-                            <a href="./IniciarSesion.html" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: S/.XX.XX</p>
-                            <a href="./IniciarSesion.html" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: S/.XX.XX</p>
-                            <a href="./IniciarSesion.html" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: S/.XX.XX</p>
-                            <a href="./IniciarSesion.html" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    include 'php/catalogo_cards.php';
+                ?>
             </div>
             <br>
         </div>
