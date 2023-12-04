@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-lg ">
     <div class="container ">
       <div class="col-4">
-        <a class="navbar-brand " href="#">
+        <a class="navbar-brand " href="Catalogo.php">
           <img src="img/Logo.png" alt="Logo" width="75" height="75">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,6 +25,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
+
       <div class="col-lf-8 opIzq">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -62,6 +63,8 @@
     </div>
   </nav>
 
+
+  
   <h1 class="container titulo">Gestionar Delivery</h1>
 
   <div class="tabla-container">
@@ -74,6 +77,7 @@
           <th scope="col">Modificar</th>
         </tr>
       </thead>
+      
       <tbody>
         <tr>
           <th scope="row">Victor Larco Herrera</th>
@@ -177,7 +181,9 @@
     </table>
   </div>
 
-  <footer class=" footer fixed-bottom">
+
+  <footer class="footer fixed-bottom">
+
     <div class="container-fluid">
     </div>
   </footer>
