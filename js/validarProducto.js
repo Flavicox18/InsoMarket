@@ -90,7 +90,7 @@ function validarProducto(event) {
 
                 var nuevaFila = "<tr>" +
                 "<th scope='row'>" + nuevoProducto.id + "</th>" +
-                "<td scope='col'><img src='" + urlImagen + "' class='img-fluid' alt='" + nuevoProducto.nombre + "' height='50px' width='50px'></td>" +
+                "<td scope='col'><img src='" + nuevoProducto.imagen + "' class='img-fluid' alt='" + nuevoProducto.nombre + "' height='50px' width='50px'></td>" +
                 "<td scope='col'>" + nuevoProducto.nombre + "</td>" +
                 "<td scope='col'>" + nuevoProducto.categoria + "</td>" +
                 "<td scope='col'>" + nuevoProducto.stock + "</td>" +
