@@ -1,3 +1,11 @@
+<?php
+
+include 'php/conexion.php';
+
+$sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio, imagen FROM producto";
+$result = $conn->query($sqlObtenerProductos);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -66,136 +74,17 @@
         <div class="container">
             <div class="row">
                 <h1>Catalogo</h1>
-                <p>(xxx productos)</p>
+                <?php
+                    include 'php/catalogo.php';
+                ?>
             </div>
+
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Sublime.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Inkacola.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/SodaSanJorge.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    include 'php/catalogo_cards.php';
+                ?>
             </div>
             <br>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Sublime.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Inkacola.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/SodaSanJorge.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/CocaCola.png" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Sublime.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/Inkacola.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card custom-card">
-                        <img src="img/SodaSanJorge.jpg" class="card-img-top img-fluid" alt="Coca Cola">
-                        <div class="card-body">
-                            <h5 class="card-title">Product Name</h5>
-                            <p class="card-text">Price: $XX.XX</p>
-                            <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <br>
     </main>

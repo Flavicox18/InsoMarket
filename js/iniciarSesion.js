@@ -13,8 +13,6 @@ function redirigirACatalogo() {
         return false; // Evitar el envío del formulario si la contraseña no es válida
     }
 
-    // Redirigir a la interfaz del catálogo
-    window.location.href = "./catalogo.html";
 
     // Devolver false para evitar que el formulario se envíe normalmente
     return false;
