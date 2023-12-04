@@ -32,7 +32,7 @@ function validarProducto(event) {
     }
 
     // Validar que los campos de precio, cantidad y peso sean mayores que 0
-    if (isNaN(parseFloat(precio.value)) || parseFloat(precio.value) <= 0) {
+    if (isNaN(parseDouble(precio.value)) || parseDouble(precio.value) <= 0) {
         precio.classList.add('errorbordeCant');
     } else {
         precio.classList.remove('errorbordeCant');
@@ -44,7 +44,7 @@ function validarProducto(event) {
         cantidad.classList.remove('errorbordeCant');
     }
 
-    if (isNaN(parseFloat(peso.value)) || parseFloat(peso.value) <= 0) {
+    if (isNaN(parseDouble(peso.value)) || parseDouble(peso.value) <= 0) {
         peso.classList.add('errorbordeCant');
     } else {
         peso.classList.remove('errorbordeCant');
@@ -72,8 +72,42 @@ function validarProducto(event) {
         !precio.classList.contains('errorbordeCant') &&
         !cantidad.classList.contains('errorbordeCant') &&
         !peso.classList.contains('errorbordeCant')) {
-        alert('Formulario enviado con éxito');
-        window.location.href = './GestionarProductos.html'; // Redirigir a GestionarProductos.html
+    
+        // Crear objeto FormData con los datos del formulario
+        var formData = new FormData(document.getElementById("GestionarProductos")); // Reemplaza "tuFormularioID" con el ID de tu formulario
+
+        $.post({
+            url: "php/Agregar_producto.php",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                // Procesar la respuesta JSON
+                var nuevoProducto = JSON.parse(response);
+
+                // Construir la URL completa para la imagen
+                var urlImagen = nuevoProducto.imagen;
+
+                var nuevaFila = "<tr>" +
+                "<th scope='row'>" + nuevoProducto.id + "</th>" +
+                "<td scope='col'><img src='" + urlImagen + "' class='img-fluid' alt='" + nuevoProducto.nombre + "' height='50px' width='50px'></td>" +
+                "<td scope='col'>" + nuevoProducto.nombre + "</td>" +
+                "<td scope='col'>" + nuevoProducto.categoria + "</td>" +
+                "<td scope='col'>" + nuevoProducto.stock + "</td>" +
+                "<td scope='col'>" + nuevoProducto.precio + "</td>" +
+                "</tr>";
+
+                // Agregar la nueva fila al final de la tabla
+                $("table tbody").append(nuevaFila);
+
+                // Limpiar el formulario u hacer otras acciones necesarias
+                document.getElementById("GestionarProductos").reset(); // Reemplaza "tuFormularioID" con el ID de tu formulario
+            },
+            error: function (error) {
+                console.log("Error al agregar el producto: " + error);
+            }
+        });
+
     } else {
         event.preventDefault();
         console.log('Todos los campos deben completarse correctamente.');
