@@ -13,7 +13,7 @@
             <img src="' . $imagenRuta . '" class="img-fluid" alt="' . $row['nombre'] . '" height="250px" width="250px">
             <div class="card-body">
             <h5 class="card-title">' . $row['nombre'] . '</h5>
-            <p class="card-text">Price: $' . $row['precio'] . '</p>
+            <p class="card-text">Price: S./' . $row['precio'] . '</p>
             <a href="#" class="btn btnAgregarCarrito">Agregar al Carrito</a>
             </div>
             </div>
