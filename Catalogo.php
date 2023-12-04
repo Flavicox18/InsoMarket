@@ -81,7 +81,7 @@ $result = $conn->query($sqlObtenerProductos);
 
             <div class="row">
                 <?php
-                    include 'php/catalogo_cards.php';
+                    include 'php/metodos/mostrarProducto.php';
                 ?>
             </div>
             <br>

@@ -77,7 +77,7 @@ function validarProducto(event) {
         var formData = new FormData(document.getElementById("GestionarProductos")); // Reemplaza "tuFormularioID" con el ID de tu formulario
 
         $.post({
-            url: "php/Agregar_producto.php",
+            url: "php/agregar_producto.php",
             data: formData,
             contentType: false,
             processData: false,

@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./index.php">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,7 +50,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="./index.html">
+                            <a class="nav-link opcNav" href="./index.php">
                                 <img src="img/perfil.svg" height="45px" width="45px">
                                 <img src="img/perfilA.svg" height="45px" width="45px">
                                 Cerrar Sesión
@@ -66,7 +66,7 @@
     <h1 class="titulo">Agregar Producto</h1>
 
     <div class="container mt-4">
-        <form action='./php/Agregar_producto.php' method="post" enctype="multipart/form-data">
+        <form action='./php/agregar_producto.php' method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
@@ -145,7 +145,7 @@
                     </a>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="GestionarProductos.html">
+                    <a href="GestionarProductos.php">
                     <button  type="submit" class="btn-amarillo w-50" data-toggle="modal" data-target="#aceptarModal"
                         onclick="validarProducto(event)"><b>Agregar Producto</b></button>
                     </a>

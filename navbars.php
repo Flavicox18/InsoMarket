@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./index.php">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -64,7 +64,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./index.php">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="">
+                            <a class="nav-link opcNav" href="./GestionarProductos.php">
                                 <img src="img/productos.svg" height="50px" width="50px">
                                 <img src="img/productosA.svg" height="50px" width="50px">
                                 Productos
@@ -89,7 +89,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="">
+                            <a class="nav-link opcNav" href="./GestionarDelivery.php">
                                 <img src="img/gestionarDelivery.svg" height="50px" width="50px">
                                 <img src="img/gestionarDeliveryA.svg" height="50px" width="50px">
                                 Gestionar Delivery
@@ -113,7 +113,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./index.php">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

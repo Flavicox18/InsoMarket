@@ -41,7 +41,7 @@ function validarRegistro() {
     if (nombre.value !== '' && apellido.value !== '' && telefono.value !== '' && correo.value !== '' && contraseña.value !== '') {
         // Aquí puedes enviar el formulario o realizar otras acciones
         alert('Formulario enviado con éxito');
-        window.location.href = './IniciarSesion.html';
+        window.location.href = './IniciarSesion.php';
     } else {
         // Detener la acción predeterminada del botón
         event.preventDefault();

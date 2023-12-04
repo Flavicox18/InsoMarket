@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container ">
                 <div class="col-4">
-                    <a class="navbar-brand " href="index.html">
+                    <a class="navbar-brand " href="./index.php">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
 
@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav mx-auto">
                         <li class="nav-item ">
-                          <a class="nav-link opcNav" href="./GestionarProductos.html">
+                          <a class="nav-link opcNav" href="./GestionarProductos.php">
                             <img src="img/productos.svg" height="50px" width="50px">
                             <img src="img/productosA.svg" height="50px" width="50px">
                             Productos
@@ -52,7 +52,7 @@
                           </a>
                         </li>
                         <li class="nav-item ">
-                          <a class="nav-link opcNav" href="./index.html">
+                          <a class="nav-link opcNav" href="./index.php">
                             <img src="img/perfil.svg" height="45px" width="45px">
                             <img src="img/perfilA.svg" height="45px" width="45px">
                             Cerrar Sesión

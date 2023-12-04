@@ -86,7 +86,7 @@
                                 </div>
 
                                 <div class="col">
-                                    <button type="submit" class="btn btn-confirmar" onclick="enviarFormulario()"><b>Registrarse</b></button>
+                                <a href="./IniciarSesion.php" class="link_gs"><button type="submit" class="btn btn-confirmar" onclick="enviarFormulario()"><b>Registrarse</b></button></a>
                                 </div>
                             </div>
                         </form>
