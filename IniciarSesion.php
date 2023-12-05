@@ -82,7 +82,7 @@ session_start();
 
                     <div id="IniciarSesionEmpleado" class="row">
                         <div class="col">
-                            <a href="IniciarSesionEmpleado.html" class="link_gs"><button type="button" class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
+                            <a href="IniciarSesionEmpleado.php" class="link_gs"><button type="button" class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
                         </div>
                     </div>
                     <?php
