@@ -66,7 +66,7 @@
     <h1 class="titulo">Agregar Producto</h1>
 
     <div class="container mt-4">
-        <form action='./php/agregar_producto.php' method="post" enctype="multipart/form-data">
+        <form action='./php/metodos/agregar_producto.php' method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
@@ -140,12 +140,12 @@
 
             <div class="row mt-3">
                 <div class="col-md-6">
-                    <a href="GestionarProductos.php">
+                    <a href="./GestionarProductos.php">
                         <button type="button" class="btn-azulito w-50">Cancelar</button>
                     </a>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="GestionarProductos.php">
+                    <a href="./GestionarProductos.php">
                     <button  type="submit" class="btn-amarillo w-50" data-toggle="modal" data-target="#aceptarModal"
                         onclick="validarProducto(event)"><b>Agregar Producto</b></button>
                     </a>

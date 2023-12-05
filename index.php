@@ -1,6 +1,6 @@
 <?php
 
-include 'php/conexion.php';
+include 'php/db_config.php';
 ?>
 
 <!DOCTYPE html>

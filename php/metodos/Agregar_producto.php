@@ -46,7 +46,7 @@ if (empty($nombre) || empty($precio) || empty($categoria) || empty($cantidad) ||
 
 // Manejar la carga de la imagen
 $nombreImagen = $_FILES['imagen']['name'];
-$directorioImagen = "../img/" . $nombreImagen;  // Ruta donde se guardará la imagen
+$directorioImagen = "../../img/" . $nombreImagen;  // Ruta donde se guardará la imagen
 
 if (move_uploaded_file($_FILES['imagen']['tmp_name'], $directorioImagen)) {
     // Consulta SQL para insertar el producto con el nombre de la imagen
