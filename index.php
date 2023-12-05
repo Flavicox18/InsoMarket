@@ -1,6 +1,6 @@
 <?php
 
-include 'php/conexion.php';
+include 'php/db_config.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,16 +28,8 @@ include 'php/conexion.php';
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="col-md-4 barraBusqueda ">
-                <form class="d-flex">
-                    <select id="categoria" name="categoria" class="form-select categoria">
-                        <option value="categoria" selected>Categoria</option>
-                        <option value="bebidas">Bebidas</option>
-                        <option value="abarrotes">Abarrotes</option>
-                    </select>
-                    <input class="form-control inputBusqueda" type="text" placeholder="Buscar Producto" aria-label="Search">
-                </form>
-            </div>
+
+            
             <div class="col-lf-4 opIzq">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">

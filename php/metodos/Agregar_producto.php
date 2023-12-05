@@ -46,7 +46,7 @@ if (empty($nombre) || empty($precio) || empty($categoria) || empty($cantidad) ||
 
 // Manejar la carga de la imagen
 $nombreImagen = $_FILES['imagen']['name'];
-$directorioImagen = "../img/" . $nombreImagen;  // Ruta donde se guardará la imagen
+$directorioImagen = "../../img/" . $nombreImagen;  // Ruta donde se guardará la imagen
 
 if (move_uploaded_file($_FILES['imagen']['tmp_name'], $directorioImagen)) {
     // Consulta SQL para insertar el producto con el nombre de la imagen
@@ -58,7 +58,7 @@ if (move_uploaded_file($_FILES['imagen']['tmp_name'], $directorioImagen)) {
         // Redirigir a la página de gestionar productos con un mensaje de éxito
         session_start();
         $_SESSION['producto_agregado'] = true;
-        header("Location: /InsoMarket/GestionarProductos.php");
+        header("Location: ../../GestionarProductos.php");
         exit();
     } else {
         echo "Error al agregar el producto: " . $conn->error;

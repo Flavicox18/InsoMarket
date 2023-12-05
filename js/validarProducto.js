@@ -77,16 +77,13 @@ function validarProducto(event) {
         var formData = new FormData(document.getElementById("GestionarProductos")); // Reemplaza "tuFormularioID" con el ID de tu formulario
 
         $.post({
-            url: "php/agregar_producto.php",
+            url: "php/metodos/agregar_producto.php",
             data: formData,
             contentType: false,
             processData: false,
             success: function (response) {
                 // Procesar la respuesta JSON
                 var nuevoProducto = JSON.parse(response);
-
-                // Construir la URL completa para la imagen
-                var urlImagen = nuevoProducto.imagen;
 
                 var nuevaFila = "<tr>" +
                 "<th scope='row'>" + nuevoProducto.id + "</th>" +

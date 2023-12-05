@@ -16,13 +16,13 @@ function inicioSesionEmpleado() {
     // Redirigir en función del cargo seleccionado
     switch (cargo) {
         case "Administrador":
-            window.location.href = "./MainAdministrador.html";
+            window.location.href = "MainAdministrador.php";
             break;
         case "Despachador":
-            window.location.href = "./VerPedidos.html";
+            window.location.href = "VerPedidos.php";
             break;
         case "Repartidor":
-            window.location.href = "./VerPedidos.html";
+            window.location.href = "VerPedidos.php";
             break;
         default:
             alert("Cargo no reconocido.");
