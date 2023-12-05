@@ -58,7 +58,7 @@ if (move_uploaded_file($_FILES['imagen']['tmp_name'], $directorioImagen)) {
         // Redirigir a la página de gestionar productos con un mensaje de éxito
         session_start();
         $_SESSION['producto_agregado'] = true;
-        header("Location: /InsoMarket/GestionarProductos.php");
+        header("Location: ../../GestionarProductos.php");
         exit();
     } else {
         echo "Error al agregar el producto: " . $conn->error;

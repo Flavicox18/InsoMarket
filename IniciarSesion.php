@@ -58,14 +58,14 @@ session_start();
                         <div class="row">
                             <div class="col">
                                 <label for="correo" class="sub_subtitulo_izq">Correo</label>
-                                <input id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
+                                <input name="correo" id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
                                 <small id="correoHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="contraseña" class="sub_subtitulo_izq">Contraseña</label>
-                                <input id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
+                                <input name="contraseña" id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
                                 <small id="contraseñaHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>

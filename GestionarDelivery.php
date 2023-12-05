@@ -130,7 +130,6 @@ $result = $conn->query($query);
   <h1 class="container titulo">Gestionar Delivery</h1>
 
   <div class="tabla-container">
-
     <table class="table table-hover table-bordered">
       <thead class="table-dark">
         <tr class="fila-negra">

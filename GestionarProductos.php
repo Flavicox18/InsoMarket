@@ -121,7 +121,7 @@
 
                     while ($row = $result->fetch_assoc()) {
                         // Construye la ruta completa a la imagen
-                        $imagenRuta = '/InsoMarket/img/' . $row['imagen'];
+                        $imagenRuta = './img/' . $row['imagen'];
                     
                         echo '<tr>
                                 <th scope="row">' . $row['id'] . '</th>
