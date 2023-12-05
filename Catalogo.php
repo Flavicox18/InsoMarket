@@ -1,9 +1,5 @@
 <?php
-
-include 'php/db_config.php';
-
-$sqlObtenerProductos = "SELECT id, nombre, descripcion, categoria, cantidad, precio, imagen FROM producto";
-$result = $conn->query($sqlObtenerProductos);
+    include 'php/db_config.php';
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +28,6 @@ $result = $conn->query($sqlObtenerProductos);
                 </button>
             </div>
 
-            
             <div class="col-lf-4 opIzq">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
@@ -51,7 +46,7 @@ $result = $conn->query($sqlObtenerProductos);
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="hacerPedido.html">
+                            <a class="nav-link opcNav" href="./realizarPedido.php">
                                 <img src="img/carrito.svg" height="45px" width="45px">
                                 <img src="img/carritoA.svg" height="45px" width="45px">
                             </a>
@@ -79,7 +74,7 @@ $result = $conn->query($sqlObtenerProductos);
         </div>
         <br>
     </main>
-    <footer class=" footer  ">
+    <footer class=" footer">
         <div class="container-fluid">
 
         </div>
@@ -91,4 +86,7 @@ $result = $conn->query($sqlObtenerProductos);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/agregarCarrito.js"></script>
 </body>
+</html>
