@@ -13,22 +13,13 @@ function inicioSesionEmpleado() {
         document.getElementById("contraseñaHelp").textContent = mensajeError;
         return false; // Evitar el envío del formulario si la contraseña no es válida
     }
-    // Redirigir en función del cargo seleccionado
-    switch (cargo) {
-        case "Administrador":
-            window.location.href = "MainAdministrador.php";
-            break;
-        case "Despachador":
-            window.location.href = "VerPedidos.php";
-            break;
-        case "Repartidor":
-            window.location.href = "VerPedidos.php";
-            break;
-        default:
-            alert("Cargo no reconocido.");
-            return false; // Evitar el envío del formulario si el cargo no es reconocido
+
+    // Validar el tipo de empleado
+    if (cargo === "") {
+        alert("Selecciona un tipo de empleado.");
+        return false;
     }
 
-    // Devolver false para evitar que el formulario se envíe normalmente
-    return false;
+    // Devolver true para permitir que el formulario se envíe normalmente al método
+    return true;
 }

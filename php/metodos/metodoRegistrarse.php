@@ -14,24 +14,6 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Consulta para crear la tabla usuarios si no existe
-$sqlCreateTable = "
-CREATE TABLE IF NOT EXISTS usuario (
-    idUsuario INT(8) AUTO_INCREMENT PRIMARY KEY,
-    correo VARCHAR(100),
-    contraseña VARCHAR(16),
-    nombre VARCHAR(50),
-    apellido VARCHAR(50),
-    telefono INT(9),
-    tipo VARCHAR(10)
-)";
-
-if ($conn->query($sqlCreateTable) === TRUE) {
-    echo "Tabla usuarios creada correctamente.";
-} else {
-    echo "Error al crear la tabla: " . $conn->error;
-}
-
 // Obtener datos del formulario
 $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
 $apellido = isset($_POST['apellido']) ? $_POST['apellido'] : '';
@@ -62,6 +44,6 @@ if ($conn->query($sql) === TRUE) {
     echo "Error al registrar el usuario: " . $conn->error;
 }
 
-// Cerrar la conexión (ahora se cierra después de la inserción)
+// Cerrar la conexión
 $conn->close();
 ?>

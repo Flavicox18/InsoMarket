@@ -18,8 +18,7 @@
                     <a class="navbar-brand " href="./index.php">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -46,38 +45,33 @@
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Iniciar Sesión Empleado</p>
                 <div class=" container container-delgado">
-                    <form method="post" id="iniciarSesionFormulario" onsubmit="return inicioSesionEmpleado()">
+                    <form method="post" action="./php/metodos/metodoIniciarSesionEmpleado.php">
+                        <!-- Agregar los campos necesarios para el inicio de sesión de empleados -->
                         <div class="row">
                             <div class="col">
                                 <label for="correo" class="sub_subtitulo_izq">Correo</label>
-                                <input id="correo" class="form-control campo_borde" type="email"
-                                    placeholder="example@example.com" required>
+                                <input name="correo" id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="contraseña" class="sub_subtitulo_izq">Contraseña</label>
-                                <input id="contraseña" class="form-control campo_borde" type="password"
-                                    placeholder="************" required>
+                                <input name="contraseña" id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
                                 <small id="contraseñaHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>
                         <p class="sub_subtitulo_izq">Cargo</p>
-
-                        <select id="categoria" name="categoria" class="cargo">
+                        <select name="categoria" id="categoria" class="cargo">
                             <option value="Administrador" selected>Administrador</option>
                             <option value="Despachador">Despachador</option>
                             <option value="Repartidor">Repartidor</option>
                         </select>
-
-                        <div class="row ">
+                        <div class="row">
                             <div class="col">
-                                <a href="IniciarSesion.php" class="link_gs"><button type="button"
-                                        class="btn-cancelar"><b>Cancelar</b></button></a>
+                                <a href="IniciarSesion.php" class="link_gs"><button type="button" class="btn-cancelar"><b>Cancelar</b></button></a>
                             </div>
-
                             <div class="col">
-                            <a href="MainAdministrador.php" class="link_gs"><button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button></a>
+                                <button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button>
                             </div>
                         </div>
                     </form>
@@ -98,4 +92,5 @@
 
 
 </body>
+
 </html>

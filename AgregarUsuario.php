@@ -69,11 +69,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Agregar Usuario </p>
-                <?php
-                include ("php/agregar_Usuario.php");
-                include ("php/db_config.php");
-                ?>
-                <form class="container container-peque" method="post" action="php/agregar_Usuario.php">
+                <form class="container container-peque" method="post" action="./php/metodos/metodoAgregarUsuario.php">
                     <div class="row">
 
                         <div class="col-md-6">
