@@ -69,34 +69,42 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="espacio-texto titulo"> Agregar Usuario </p>
-                <form class=" container container-peque">
+                <?php
+                include ("php/agregar_Usuario.php");
+                include ("php/db_config.php");
+                ?>
+                <form class="container container-peque" method="post" action="php/agregar_Usuario.php">
                     <div class="row">
 
                         <div class="col-md-6">
                             <p class="sub_subtitulo_izq">Nombre</p>
-                            <input id="nombre" type="text" class="form-control campo_borde">
+                            <input id="nombre" type="text" name="nombre" class="form-control campo_borde">
                         </div>
                         <div class="col-md-6">
                             <p class="sub_subtitulo_izq">Apellido</p>
-                            <input id="apellido" type="text" class="form-control campo_borde">
+                            <input id="apellido" type="text" name="apellido" class="form-control campo_borde">
                         </div>
 
                         <div class="col-md-6">
-                            <p class="sub_subtitulo_izq">DNI</p>
-                            <input id="dni" type="number" class="form-control campo_borde">
+                            <p class="sub_subtitulo_izq">Cargo</p>
+                            <select id="categoria" name="cargo" class="cargo">
+                                <option value="Administrador" selected>Administrador</option>
+                                <option value="Despachador">Despachador</option>
+                                <option value="Repartidor">Repartidor</option>
+                            </select>
                         </div>
                         <div class="col-md-6">
                             <p class="sub_subtitulo_izq">Teléfono</p>
-                            <input id="telefono" type="number" class="form-control campo_borde">
+                            <input id="telefono" type="number" name="telefono" class="form-control campo_borde">
                         </div>
 
                         <div class="col-md-6">
                             <p class="sub_subtitulo_izq">Correo</p>
-                            <input id="correo" type="email" class="form-control campo_borde" placeholder="example@example.com">
+                            <input id="correo" type="email" name="correo" class="form-control campo_borde" placeholder="example@example.com">
                         </div>
                         <div class="col-md-6">
                             <p class="sub_subtitulo_izq">Contraseña</p>
-                            <input id="contraseña" type="password" class="form-control campo_borde" placeholder="************">
+                            <input id="contraseña" type="password" name="contraseña" class="form-control campo_borde" placeholder="************">
                         </div>
                     </div>
 
@@ -107,7 +115,7 @@
                         </div>
 
                         <div class="col">
-                            <a href="GestionarUsuario.html" class="link_gs"><button type="button"
+                            <a href="GestionarUsuario.html" class="link_gs"><button type="submit"
                                     class="btn-confirmar" onclick="validarRegistro()"><b>Agregar Usuario</b></button></a>
                         </div>
 

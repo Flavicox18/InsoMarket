@@ -64,7 +64,7 @@
 
     <div class="container d-flex justify-content-between align-items-center">
         <h1 class="titulo">Gestionar Usuario</h1>
-        <a href="./AgregarUsuario.html">
+        <a href="./AgregarUsuario.php">
             <button class="btn-amarillo">Agregar Usuario</button>
         </a>
     </div>
@@ -73,89 +73,15 @@
 
         <table class="table table-hover table-bordered">
             <thead class="table-dark">
-                <tr class="fila-negra">
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Tipo de Empleado</th>
-                    <th scope="col">Inscripción</th>
-                    <th scope="col">Acción</th>
-                </tr>
+               
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Edilberto Chávez</th>
-                    <td scope="col">Despachador</td>
-                    <td scope="col">21-11-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Armando Castillo</th>
-                    <td scope="col">Repartidor</td>
-                    <td scope="col">19-10-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Miguel Mateos</th>
-                    <td scope="col">Repartidor</td>
-                    <td scope="col">15-10-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Carlos Tévez</th>
-                    <td scope="col">Repartidor</td>
-                    <td scope="col">11-10-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Carlos Gaytán</th>
-                    <td scope="col">Despachador</td>
-                    <td scope="col">25-09-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Christian Yaipén</th>
-                    <td scope="col">Despachador</td>
-                    <td scope="col">12-09-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Diego Campos</th>
-                    <td scope="col">Repartidor</td>
-                    <td scope="col">08-09-2023</td>
-                    <td scope="col" class="text-center">
-                        <i class="material-icons eliminar-icon" data-toggle="modal"
-                            data-target="#eliminarModal">delete</i>
-                    </td>
-                </tr>
-
-
+                <?php
+                include("php/gestionar_Usuarios.php");
+                ?>
             </tbody>
         </table>
     </div>
-
 
     <div class="modal" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="eliminarModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -171,7 +97,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class=" footer fixed-bottom">
         <div class="container-fluid">
         </div>
@@ -185,3 +111,4 @@
 </body>
 
 </html>
+
