@@ -36,3 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         costoEnvioElement.contentEditable = false;
     }
 });
+
+
+// probablementen no use esto
