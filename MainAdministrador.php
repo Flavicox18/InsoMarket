@@ -38,14 +38,14 @@
                           </a>
                         </li>
                         <li class="nav-item ">
-                          <a class="nav-link opcNav" href="GestionarUsuario.html">
+                          <a class="nav-link opcNav" href="GestionarUsuario.php">
                             <img src="img/gestionarUsuarios.svg" height="45px" width="45px">
                             <img src="img/gestionarUsuariosA.svg" height="45px" width="45px">
                             Gestionar Usuarios
                           </a>
                         </li>
                         <li class="nav-item ">
-                          <a class="nav-link opcNav" href="GestionarDelivery.html">
+                          <a class="nav-link opcNav" href="GestionarDelivery.php">
                             <img src="img/gestionarDelivery.svg" height="50px" width="50px">
                             <img src="img/gestionarDeliveryA.svg" height="50px" width="50px">
                             Gestionar Delivery
