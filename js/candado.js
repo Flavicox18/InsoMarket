@@ -37,5 +37,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
-// probablementen no use esto
