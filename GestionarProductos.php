@@ -49,7 +49,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="./index.html">
+                            <a class="nav-link opcNav" href="./index.php">
                                 <img src="img/perfil.svg" height="45px" width="45px">
                                 <img src="img/perfilA.svg" height="45px" width="45px">
                                 Cerrar Sesión

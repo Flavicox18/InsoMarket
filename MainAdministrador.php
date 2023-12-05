@@ -74,13 +74,13 @@
                     </a>
                 </div>
                 <div class="col-md-4 centered-content">
-                    <a href="GestionarProductos.html" class="opcMain imgCambiante">
+                    <a href="GestionarProductos.php" class="opcMain imgCambiante">
                         <img src="img/GestionarProductosNegro.png" alt="">
                         <h3>Gestionar Productos</h3>
                     </a>
                 </div>
                 <div class="col-md-4 centered-content">
-                    <a href="GestionarUsuario.html" class="opcMain imgCambiante">
+                    <a href="GestionarUsuario.php" class="opcMain imgCambiante">
                         <img src="img/GestionarUsuariosNegro.png" alt="">
                         <h3>Gestionar Usuarios</h3>
                     </a>

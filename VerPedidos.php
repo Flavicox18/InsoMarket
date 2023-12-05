@@ -29,14 +29,14 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="./VerPedidos.html">
+                                <a class="nav-link opcNav" href="./VerPedidos.php">
                                     <img src="img/misPedidos.svg" height="45px" width="45px">
                                     <img src="img/misPedidosA.svg" height="45px" width="45px">
                                     Pedidos
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="./index.html">
+                                <a class="nav-link opcNav" href="./index.php">
                                     <img src="img/perfil.svg" height="45px" width="45px">
                                     <img src="img/perfilA.svg" height="45px" width="45px">
                                     Cerrar Sesion
@@ -70,7 +70,7 @@
                     <td scope="col">14/11/2023 18:00:52</td>
                     <td scope="col">Pendiente</td>
                     <td scope="col" class="text-center">
-                        <a href="DetallePedido.html">
+                        <a href="DetallePedido.php">
                             <div class="d-grid gap-2 d-md-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-plus-lg" viewBox="0 0 16 16">

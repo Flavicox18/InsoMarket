@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container ">
                 <div class="col-4">
-                    <a class="navbar-brand " href="Catalogo.html">
+                    <a class="navbar-brand " href="Catalogo.php">
                         <img src="img/Logo.png" alt="Logo" width="75" height="75">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,21 +31,21 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="MisPedidos.html">
+                                <a class="nav-link opcNav" href="MisPedidos.php">
                                     <img src="img/misPedidos.svg" height="50px" width="50px">
                                     <img src="img/misPedidosA.svg" height="50px" width="50px">
                                     Mis Pedidos
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="./index.html">
+                                <a class="nav-link opcNav" href="./index.php">
                                     <img src="img/perfil.svg" height="50px" width="50px">
                                     <img src="img/perfilA.svg" height="50px" width="50px">
                                     Cerrar Sesión
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link opcNav" href="hacerPedido.html">
+                                <a class="nav-link opcNav" href="hacerPedido.php">
                                     <img src="img/carrito.svg" height="45px" width="45px">
                                     <img src="img/carritoA.svg" height="45px" width="45px">
                                 </a>
@@ -76,7 +76,7 @@
                     <td scope="col">11-11-2023 23:32:52</td>
                     <td scope="col">Pendiente</td>
                     <td scope="col" class="text-center">
-                        <a href="DetalleMisPedidos2.html">
+                        <a href="DetalleMisPedidos2.php">
                             <div class="d-grid gap-2 d-md-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-plus-lg" viewBox="0 0 16 16">
@@ -138,7 +138,7 @@
                     <td scope="col">27-10-2023 19:12:21</td>
                     <td scope="col">Entregado</td>
                     <td scope="col" class="text-center">
-                        <a href="DetalleMisPedidos.html">
+                        <a href="DetalleMisPedidos.php">
                             <div class="d-grid gap-2 d-md-block">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-plus-lg" viewBox="0 0 16 16">
