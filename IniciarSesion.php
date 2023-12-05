@@ -58,14 +58,14 @@ session_start();
                         <div class="row">
                             <div class="col">
                                 <label for="correo" class="sub_subtitulo_izq">Correo</label>
-                                <input name="correo" id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
+                                <input id="correo" class="form-control campo_borde" type="email" placeholder="example@example.com" required>
                                 <small id="correoHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="contraseña" class="sub_subtitulo_izq">Contraseña</label>
-                                <input name="contraseña" id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
+                                <input id="contraseña" class="form-control campo_borde" type="password" placeholder="************" required>
                                 <small id="contraseñaHelp" class="form-text mensajeError"></small>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ session_start();
 
                     <div id="IniciarSesionEmpleado" class="row">
                         <div class="col">
-                            <a href="IniciarSesionEmpleado.php" class="link_gs"><button type="button" class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
+                            <a href="IniciarSesionEmpleado.html" class="link_gs"><button type="button" class=" btn-IsEmp"><b>Iniciar Sesión Empleado</b></button></a>
                         </div>
                     </div>
                     <?php

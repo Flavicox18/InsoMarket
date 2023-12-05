@@ -72,12 +72,12 @@
 
                         <div class="row ">
                             <div class="col">
-                                <a href="IniciarSesion.php" class="link_gs"><button type="button"
+                                <a href="./IniciarSesion.php" class="link_gs"><button type="button"
                                         class="btn-cancelar"><b>Cancelar</b></button></a>
                             </div>
 
                             <div class="col">
-                            <a href="MainAdministrador.php" class="link_gs"><button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button></a>
+                            <a href="./MainAdministrador.php" class="link_gs"><button type="submit" class="btn-confirmar"><b>Iniciar Sesión</b></button></a>
                             </div>
                         </div>
                     </form>
@@ -98,4 +98,6 @@
 
 
 </body>
+
+
 </html>

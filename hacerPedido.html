@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container ">
             <div class="col-4">
-                <a class="navbar-brand " href="Catalogo.php">
+                <a class="navbar-brand " href="Catalogo.html">
                     <img src="img/Logo.png" alt="Logo" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,27 +25,35 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
-            
+            <div class="col-md-4 barraBusqueda ">
+                <form class="d-flex">
+                    <select id="categoria" name="categoria" class="form-select categoria">
+                        <option value="categoria" selected>Categoria</option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="abarrotes">Abarrotes</option>
+                    </select>
+                    <input class="form-control inputBusqueda" type="text" placeholder="Buscar Producto" aria-label="Search">
+                </form>
+            </div>
             <div class="col-lf-4 opIzq">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="MisPedidos.php">
+                            <a class="nav-link opcNav" href="MisPedidos.html">
                                 <img src="img/misPedidos.svg" height="50px" width="50px">
                                 <img src="img/misPedidosA.svg" height="50px" width="50px">
                                 Mis Pedidos
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="./index.php">
+                            <a class="nav-link opcNav" href="./index.html">
                                 <img src="img/perfil.svg" height="50px" width="50px">
                                 <img src="img/perfilA.svg" height="50px" width="50px">
                                 Cerrar Sesión
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link opcNav" href="hacerPedido.php">
+                            <a class="nav-link opcNav" href="hacerPedido.html">
                                 <img src="img/carrito.svg" height="45px" width="45px">
                                 <img src="img/carritoA.svg" height="45px" width="45px">
                             </a>

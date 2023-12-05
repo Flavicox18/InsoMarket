@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-require_once '../clases/usuario.php';
-
 class MetodoIniciarSesion {
     private $conn;
 
@@ -49,7 +47,7 @@ class MetodoIniciarSesion {
             $_SESSION['usuario'] = $usuario;
 
             // Redirigir a la página del catálogo
-            header("Location: ../../Catalogo.php");
+            header("Location: ../Catalogo.php");
             exit();
         } else {
             // Inicio de sesión fallido

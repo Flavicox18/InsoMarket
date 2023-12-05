@@ -1,7 +1,3 @@
-<?php
-include 'php/metodos/GestionarDelivery.php';
-
-?>
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +10,6 @@ include 'php/metodos/GestionarDelivery.php';
   <link rel="stylesheet" href="css/GestionarDelivery.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>MiniMarket - Gestionar Delivery</title>
-
 </head>
 
 <body>
@@ -25,7 +20,8 @@ include 'php/metodos/GestionarDelivery.php';
         <a class="navbar-brand " href="Catalogo.php">
           <img src="img/Logo.png" alt="Logo" width="75" height="75">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -68,96 +64,121 @@ include 'php/metodos/GestionarDelivery.php';
   </nav>
 
 
+
   <h1 class="container titulo">Gestionar Delivery</h1>
 
+  <div class="tabla-container">
 
-  <form action='/php/metodos/GestionarDelivery.php' method="post" enctype="multipart/form-data">
-    <div class="tabla-container">
-      <table class="table table-hover table-bordered">
-        <thead class="table-dark">
-          <tr class="fila-negra">
-            <th scope="col">Distrito</th>
-            <th scope="col">Costo de envío (S/.)</th>
-            <th scope="col">Modificar</th>
-          </tr>
-        </thead>
+    <table class="table table-hover table-bordered">
+      <thead class="table-dark">
+        <tr class="fila-negra">
+          <th scope="col">Distrito</th>
+          <th scope="col">Costo de envío</th>
+          <th scope="col">Modificar</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <th scope="row">Victor Larco Herrera</th>
+          <td scope="col">S/.3.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-        <tbody>
-          <tr>
-          <tr>
-            <th scope="row">Victor Larco Herrera</th>
-            <td scope="col" class="costo-envio editable">3</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">Trujillo</th>
+          <td scope="col">S/.6.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">Trujillo</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">6</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">Moche</th>
+          <td scope="col">S/.6.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">Moche</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">6</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">Salaverry</th>
+          <td scope="col">S/.10.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">Salaverry</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">10</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">La esperanza</th>
+          <td scope="col">S/.10.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">La Esperanza</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">10</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">Huanchaco</th>
+          <td scope="col">S/.10.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">Huanchaco</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">10</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">Florencia de Mora</th>
+          <td scope="col">S/.10.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">Florencia de Mora</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">10</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">El Porvenir</th>  
+          <td scope="col">S/.12.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
 
-          <tr>
-            <th scope="row">El Porvenir</th>
-            <<td scope="col" class="costo-envio editable"name="costo_envio">12</td>
-              <td scope="col" class="text-center">
-                <span class="material-icons candado editable" data-elementoid="1">lock</span>
-              </td>
-          </tr>
-
-          <tr>
-            <th scope="row">Laredo</th>
-            <td scope="col" class="costo-envio editable"name="costo_envio">15</td>
-            <td scope="col" class="text-center">
-              <span class="material-icons candado editable" data-elementoid="1">lock</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  </form>
+        <tr>
+          <th scope="row">Laredo</th>
+          <td scope="col">S/.15.00</td>
+          <td scope="col" class="text-center"><span class="material-icons">
+              <span class="material-icons candado" id="candado">
+                lock
+              </span>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 

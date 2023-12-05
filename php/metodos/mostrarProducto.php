@@ -6,7 +6,7 @@
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
 
-            $imagenRuta = './img/' . $row['imagen'];
+            $imagenRuta = '/InsoMarket/img/' . $row['imagen'];
 
             echo '<div class="col-md-3">
             <div class="card custom-card">
