@@ -14,3 +14,23 @@ $(document).ready(function(){
         }
     });
 });
+
+
+function hacerPedido() {
+    // Aquí podrías realizar las acciones necesarias para hacer el pedido
+    // ...
+
+    // Muestra la notificación en Windows
+    if (window.Notification && Notification.permission === "granted") {
+        new Notification("Pedido realizado con éxito");
+    } else if (window.Notification && Notification.permission !== "denied") {
+        Notification.requestPermission().then(function (permission) {
+            if (permission === "granted") {
+                new Notification("Pedido realizado con éxito");
+            }
+        });
+    }
+
+    // Redirige al usuario al catálogo
+    window.location.href = "./Catalogo.php";
+}

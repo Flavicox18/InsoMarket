@@ -61,7 +61,6 @@ table {
 }
 
 #btnSiguiente{
-    display: inline-flex;
     padding: 5px;
     justify-content: center;
     align-items: center;
@@ -127,5 +126,5 @@ table {
 
 .ola {
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido hacia la derecha */
+  margin-left: 85%;
 }
